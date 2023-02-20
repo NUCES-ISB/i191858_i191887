@@ -20,9 +20,9 @@ jobs:
         pip install -r requirements.txt
         pip install pylint black
     - name: Run pylint
-      run: pylint src/
+      run: pylint polymath.py
     - name: Run black
-      run: black --check src/
+      run: black --check polymath.py
     - name: Run tests
       run: |
-        pytest tests/
+        pytest polymath.py
